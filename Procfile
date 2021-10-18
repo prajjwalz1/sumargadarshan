@@ -1,1 +1,0 @@
-web: gunicorn sumargadarshan.wsgi
