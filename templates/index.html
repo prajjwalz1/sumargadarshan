@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>BootStrap HTML5 CSS3 Theme</title>
+	<title>सुमार्गदर्शन</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -74,12 +74,13 @@
 								<div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
 									<ul>
 
-										<li><a href="">Home</a></li>
-										<li><a href="#blog">Blogs</a></li>
-										<li><a href="#features">Featured</a></li>
-										<li><a href="#newrelease">New Realease</a></li>
+										<li><a href="">गृहपृष्ठ</a></li>
+										<li><a href="#blog">ब्लग</a></li>
+										<li><a href="#top">पुस्तकहरु</a></li>
+										<li><a href="#features">फिचर्ड</a></li>
+										<li><a href="#newrelease">नयाँ संकरण</a></li>
 
-										<li><a href="#contact">Contact</a></li>
+										<li><a href="#contact">सल्लाह सुझावहरु</a></li>
 										<li class="menu-item-has-children current-menu-item">
 											<a href="javascript:void(0);"><i class="icon-menu"></i></a>
 											<ul class="sub-menu">
@@ -177,7 +178,7 @@
 						<div class="tg-newrelease">
 							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 								<div class="tg-sectionhead">
-									<h2><span>Taste The New Spice</span>New Release Books</h2>
+									<h2><span></span>New Release Books</h2>
 								</div>
 								<div class="tg-description">
 									<p>{{newrelease.0.paragraph}}</p>
@@ -227,20 +228,10 @@
 					</div>
 				</div>
 			</section>
-			<!--************************************
-					New Release End
-			*************************************-->
-			<!--************************************
-					Collection Count Start
-			*************************************-->
 
-			<!--************************************
-					Collection Count End
-			*************************************-->
-			<!--************************************
-					Picked By Author Start
-			*************************************&ndash;&gt;-->
-			<section class="tg-sectionspace tg-haslayout">
+<!--					Picked By Author Start-->
+
+			<section class="tg-sectionspace tg-haslayout" id="top">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -259,11 +250,11 @@
 										</div>
 										<div class="tg-hovercontent">
 											<div class="tg-description">
-												<p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore toloregna aliqua enim adia minim veniam, quis nostrud.</p>
+												<p>{{picks.description}}</p>
 											</div>
-											<strong class="tg-bookpage">Book Pages: 206</strong>
-											<strong class="tg-bookcategory">Category: Adventure, Fun</strong>
-											<strong class="tg-bookprice">Price: $23.18</strong>
+											<strong class="tg-bookpage">Book Pages: {{picks.pages}}</strong>
+											<strong class="tg-bookcategory">Category: {{picks.category}}</strong>
+											<strong class="tg-bookprice">Price: {{picks.price}}</strong>
 											<div class="tg-ratingbox"><span class="tg-stars"><span></span></span></div>
 										</div>
 									</figure>
@@ -290,7 +281,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="tg-sectionhead">
-								<h2><span>Latest News &amp; Articles</span>What's Hot in The News</h2>
+								<h2><span>Latest News &amp; Articles</span>नयाँ ब्लगहरु</h2>
 								<a class="tg-btn" href="javascript:void(0);">View All</a>
 							</div>
 						</div>

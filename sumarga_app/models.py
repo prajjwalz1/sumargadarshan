@@ -42,6 +42,9 @@ class picks(models.Model):
     image=models.ImageField(upload_to='pic')
     book_name=models.CharField(null=True,max_length=50)
     writer=models.CharField(null=True,max_length=50)
+    pages=models.CharField(null=True,max_length=20)
+    category=models.CharField(null=True,max_length=40)
+    price=models.CharField(null=True,max_length=40)
     def __str__(self):
         return self.book_name
 class logo(models.Model):
